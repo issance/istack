@@ -18,7 +18,7 @@ to choose the models it uses.
 
 ## Use
 
-Start a task with `/poteto-mode`, or say "poteto mode". The full guide is in [docs/GUIDE.md](docs/GUIDE.md)
+Start a task with `/poteto-mode`, or say "poteto mode". The full guide is in [GUIDE.md](GUIDE.md)
 and [docs/guide/](docs/guide/README.md).
 
 iStack is a rebranded distribution of an MIT-licensed project; see NOTICE-ISSANCE.md and LICENSE.
