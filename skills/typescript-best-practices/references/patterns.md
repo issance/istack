@@ -9,13 +9,9 @@ Brand primitives so they can't be mixed up. Validate once at the boundary. Downs
 ```ts
 type AgentId = string & { readonly __brand: "AgentId" };
 
-function isAgentId(input: string): input is AgentId {
-  return isUUID(input);
-}
-
 function parseAgentId(input: string): AgentId {
-  if (!isAgentId(input)) throw new Error(`Invalid agent id: ${input}`);
-  return input;
+  if (!isUUID(input)) throw new Error(`Invalid agent id: ${input}`);
+  return input as AgentId;
 }
 
 function focusAgent(id: AgentId): void {
